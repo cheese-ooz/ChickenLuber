@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Car Game</h1>
+
+<button onclick="moveCar()">Drive!</button>
+
+<div id="car" style="
+width:100px;
+height:50px;
+background:red;
+position:absolute;
+left:50px;
+top:100px;
+"></div>
+
+<script>
+let x = 50;
+
+function moveCar() {
+  x += 20;
+  document.getElementById("car").style.left = x + "px";
+}
+</script>
+
+</body>
+</html>
